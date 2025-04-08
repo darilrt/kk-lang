@@ -1,0 +1,7 @@
+[package]
+name = "shit-lang"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dyn-fmt = "0.4.3"
