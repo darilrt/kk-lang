@@ -413,6 +413,9 @@ impl Interpreter {
 }
 
 fn main() {
+    let start_time = std::time::Instant::now();
     let mut interpreter = Interpreter::new();
     interpreter.eval_file("test.sl");
+    let end_time = std::time::Instant::now();
+    println!("Time taken: {:?}", end_time.duration_since(start_time));
 }
